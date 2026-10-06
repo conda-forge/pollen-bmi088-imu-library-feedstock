@@ -10,6 +10,9 @@ package:
 source:
   url: https://pypi.org/packages/source/p/pollen-BMI088-imu-library/pollen_bmi088_imu_library-${{ version }}.tar.gz
   sha256: 6a82eafa448807a87c7a9e1ed8ef395b0ce5f2f57fa536b5b3a3f428e72d8fcf
+  patches:
+    # upstream pins numpy <2.3, which has no builds for python >=3.14
+    - relax-numpy-pin.patch
 
 build:
   number: 1
@@ -34,7 +37,7 @@ requirements:
   run:
     - python
     - smbus3 ==0.5.5
-    - numpy >=2.2.5,<2.3.0
+    - numpy >=2.2.5
     - ahrs
 
 tests:
