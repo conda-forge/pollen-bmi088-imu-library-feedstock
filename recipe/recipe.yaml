@@ -12,7 +12,7 @@ source:
   sha256: 6a82eafa448807a87c7a9e1ed8ef395b0ce5f2f57fa536b5b3a3f428e72d8fcf
 
 build:
-  number: 0
+  number: 1
   # depends on smbus3 (unix-only I2C via /dev/i2c-*); unusable on Windows.
   # Not noarch because conda-forge's linter forbids skips on noarch packages
   # in staged-recipes; once this lives in its own feedstock it can become
