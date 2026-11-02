@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.0.0rc1"
+  version: "1.0.0"
 
 package:
   name: pollen-bmi088-imu-library
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pollen-BMI088-imu-library/pollen_bmi088_imu_library-${{ version }}.tar.gz
-  sha256: 6a82eafa448807a87c7a9e1ed8ef395b0ce5f2f57fa536b5b3a3f428e72d8fcf
+  sha256: 08e8a93ed3a70f0a08ab447fdaddb4a8780b4f1320c40fbea2d4660938398654
 
 build:
   number: 0
